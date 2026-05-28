@@ -1224,61 +1224,63 @@ Wishing him all the very best for a bright and soaring future "
 
 </section>
 
-<!-- ================= BOOK APPOINTMENT ================= -->
-<section id="appointment" class="py-24 px-6 bg-black text-white">
+<!-- Appointment Section -->
+<section id="appointment" class="py-20 bg-black text-white">
 
-  <div class="max-w-4xl mx-auto">
+  <div class="max-w-4xl mx-auto px-6">
 
-    <!-- Heading -->
-    <div class="text-center mb-12">
-      <p class="uppercase tracking-[6px] text-cyan-400 text-sm font-semibold">
-        BOOK AN APPOINTMENT
-      </p>
+    <h2 class="text-4xl font-bold text-center mb-12">
+      Book an Appointment
+    </h2>
 
-      <h2 class="text-4xl md:text-5xl font-bold mt-4">
-        Schedule a Session
-      </h2>
+    <form action="https://formsubmit.co/mkushal626@gmail.com"
+      method="POST"
+      class="grid md:grid-cols-2 gap-6">
 
-      <p class="text-gray-400 mt-4">
-        Fill in your details and purpose of meeting.
-      </p>
-    </div>
-
-    <!-- Form -->
-    <form class="grid md:grid-cols-2 gap-6">
-
-      <!-- Full Name -->
+      <!-- Name -->
       <div>
         <label class="block mb-2 text-gray-300">Full Name</label>
-        <input type="text"
-          placeholder="Enter your full name"
+
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Enter your name"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
       </div>
 
       <!-- Email -->
       <div>
-        <label class="block mb-2 text-gray-300">Email Address</label>
-        <input type="email"
+        <label class="block mb-2 text-gray-300">Email</label>
+
+        <input
+          type="email"
+          name="email"
+          required
           placeholder="Enter your email"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
       </div>
 
-      <!-- Mobile Number -->
+      <!-- Mobile -->
       <div>
         <label class="block mb-2 text-gray-300">Mobile Number</label>
-        <input type="tel"
-          placeholder="Enter your mobile number"
+
+        <input
+          type="tel"
+          name="phone"
+          required
+          placeholder="Enter mobile number"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
       </div>
 
-      <!-- Appointment Purpose -->
+      <!-- Purpose -->
       <div>
         <label class="block mb-2 text-gray-300">Purpose</label>
 
         <select
+          name="purpose"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
 
-          <option>Select Purpose</option>
           <option>Career Guidance</option>
           <option>Project Discussion</option>
           <option>Mentorship</option>
@@ -1291,14 +1293,20 @@ Wishing him all the very best for a bright and soaring future "
       <!-- Date -->
       <div>
         <label class="block mb-2 text-gray-300">Preferred Date</label>
-        <input type="date"
+
+        <input
+          type="date"
+          name="date"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
       </div>
 
       <!-- Time -->
       <div>
         <label class="block mb-2 text-gray-300">Preferred Time</label>
-        <input type="time"
+
+        <input
+          type="time"
+          name="time"
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none">
       </div>
 
@@ -1306,19 +1314,27 @@ Wishing him all the very best for a bright and soaring future "
       <div class="md:col-span-2">
         <label class="block mb-2 text-gray-300">Additional Message</label>
 
-        <textarea rows="5"
+        <textarea
+          rows="5"
+          name="message"
           placeholder="Write your message here..."
           class="w-full p-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none"></textarea>
       </div>
 
-      <!-- Button -->
+      <!-- Hidden Settings -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Submit Button -->
       <div class="md:col-span-2 text-center">
+
         <button
+          type="submit"
           class="px-10 py-4 bg-cyan-400 text-black font-semibold rounded-full hover:bg-cyan-300 transition duration-300">
 
           Book Appointment
 
         </button>
+
       </div>
 
     </form>
